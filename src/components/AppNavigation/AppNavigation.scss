@@ -1,0 +1,68 @@
+.App-Header {
+  display: flex;
+  justify-content: space-between;
+  
+  &--wrapper {
+    padding: 20px;
+    background: darken(lightblue, 10%);
+    border-bottom: 4px solid darken(lightblue, 20%);
+  }
+}
+
+.App-Logo {
+  display: inline;
+  margin: 0;
+  &--title {
+    text-shadow: 2px 2px 0 #444, 4px 4px 0 #999;
+    font-size: 3.5rem;
+    letter-spacing: 2px;
+    font-style: italic;
+    margin: 0;
+    
+    a {
+      text-decoration: none;
+      color: white;
+      
+      &:hover {
+        color: darken(white, 2%);
+        text-shadow: 2px 2px 0 #444, 4px 2px 0 pink;
+      }
+    }
+    
+  }
+  
+  &--tagline {
+    color: lighten(#444, 10%);
+    text-shadow: 1px 1px 0 #b7b7b7;
+    font-weight: 200;
+    font-style: italic;
+    margin-top: 0;
+    padding-left: 5px;
+  }
+  
+}
+
+.App-Navigation {
+  display: inline-flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+.App-Navigation--link {
+  list-style: none;
+  margin: 10px 20px 0 0;
+  a {
+    color: white;
+    text-decoration: none;
+  }
+}
+
+.App-Logout {
+  background: transparent;
+  border: 1px solid black;
+  color: black;
+  &:hover {
+    background: lighten(black, 10%);
+  }
+}

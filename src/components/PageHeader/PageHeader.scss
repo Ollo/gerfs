@@ -1,0 +1,11 @@
+.Page-Header {
+	display: flex;
+	justify-content: space-between;
+	padding: 10px;
+	
+	&--title {
+		color: darken(#b7b7b7, 20%);
+		text-shadow: 1px 1px 0 #f6f6f6;
+		font-style: italic;
+	}
+}
