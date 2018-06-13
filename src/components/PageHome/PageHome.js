@@ -58,8 +58,9 @@ class PageHome extends Component {
                 Add Gif
               </button>
             </PageHeader>
-            
-            { this.renderGifs(gifs) }
+            <div>
+              { this.renderGifs(gifs) }
+            </div>
           </div>
         }
       </section>

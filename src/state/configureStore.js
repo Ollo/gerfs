@@ -3,10 +3,10 @@ import thunk from 'redux-thunk'
 
 import { createLogger } from 'redux-logger'
 import { routerMiddleware } from 'redux-json-router'
+import { analyticsMiddleware } from './middleware/analytics'
 import { buildRootReducer } from './reducers'
 
 export default (initialState = {}, history) => {
-  
   const reduxLogger = createLogger({
     'collapsed': true,
     'timestamp': false
@@ -15,6 +15,7 @@ export default (initialState = {}, history) => {
   const middleWare = [
     thunk,
     routerMiddleware(history),
+    analyticsMiddleware,
     reduxLogger
   ]
 

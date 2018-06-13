@@ -3,15 +3,14 @@ import PropTypes from 'prop-types'
 
 import './Card.scss'
 
-const Card = ({ children, className }) => (
-  <article className={ className }>
-    <div className='card'>{ children }</div>
+const Card = ({ children }) => (
+  <article className='card'>
+    { children }
   </article>
 )
 
 Card.propTypes = {
-  children: PropTypes.node,
-  className: PropTypes.string
+  children: PropTypes.node
 }
 
 export default Card
