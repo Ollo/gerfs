@@ -4,7 +4,9 @@ import PropTypes from 'prop-types'
 const PageUser = (props) => {
   const { queries: { userId } } = props
   return (
-    <h1>Profile for { userId }</h1>
+    <div style={{ padding: '20px' }}>
+      <h5>Profile for User ID: { userId }</h5>
+    </div>
   )
 }
 
