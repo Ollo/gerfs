@@ -19,11 +19,11 @@ class AppNavigation extends PureComponent {
           </figure>
 
           <figure>
-            <Link to='/user'>
-              <Icon name='user' style={{ width: '30px', height: 'auto' }}/>
+            <Link to='/user?userId=1234'>
+              <Icon name='user' style={ { width: '30px', height: 'auto' } }/>
             </Link>
           </figure>
-            
+
         </div>
       </nav>
     )
