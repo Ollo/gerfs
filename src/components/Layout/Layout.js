@@ -4,7 +4,7 @@ import { connect } from 'react-redux'
 
 import AppNavigation from 'components/AppNavigation'
 
-import 'furtive/css/furtive.min.css'
+import 'basal/dist/basal.css'
 import './Layout.scss'
 
 class Layout extends Component {
